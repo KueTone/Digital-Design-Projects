@@ -1,0 +1,39 @@
+'timescale 1ns/1ns
+module grayCode(output [2:0] q);
+	reg [2:0] state, nextState;
+	reg clk, reset;
+	parameter S0 = 3'b0000;
+	parameter S1 = 3'b0001;
+	parameter S2 = 3'b0011;
+	parameter S3 = 3'b0010;
+	parameter S4 = 3'b0110;
+	parameter S5 = 3'b0111;
+	parameter S6 = 3'b0101;
+	parameter S7 = 3'b0100;
+	
+	initial begin
+		reset = 1; #100; reset = 0;
+	end
+	always begin
+		clk = 1; #50; clk=0; #50;
+	end
+	
+	always @(posedge clk, posedge reset)
+		if (reset) state <= S0;
+		else state <= nextState;
+	
+	always@(*)
+		case (state)
+			S0: nextState <= S1;
+			S1: nextState <= S2;
+			S2: nextState <= S3;
+			S3: nextState <= S4;
+			S4: nextState <= S5;
+			S5: nextState <= S6;
+			S6: nextState <= S7;
+			S7: nextState <= S0;
+			default: nextState <= S0;
+			
+		endcase
+	assign q = state;
+endmodule

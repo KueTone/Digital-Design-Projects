@@ -1,0 +1,183 @@
+# Compile of hmwksequentiallogicfsm.v was successful.
+# Load canceled
+# Compile of hmwksequentiallogicfsm.v was successful.
+vsim -gui work.mealyFSM
+# vsim -gui work.mealyFSM 
+# Start time: 21:22:26 on Nov 05,2023
+# Loading work.mealyFSM
+add wave -position end  sim:/mealyFSM/S0
+add wave -position end  sim:/mealyFSM/S1
+add wave -position end  sim:/mealyFSM/S2
+add wave -position end  sim:/mealyFSM/S3
+add wave -position end  sim:/mealyFSM/q
+add wave -position end  sim:/mealyFSM/state
+add wave -position end  sim:/mealyFSM/nextState
+add wave -position end  sim:/mealyFSM/clk
+add wave -position end  sim:/mealyFSM/reset
+add wave -position end  sim:/mealyFSM/A
+add wave -position end  sim:/mealyFSM/B
+force q 0
+run
+run 
+force q 1
+run
+run
+# Compile of hmwksequentiallogicfsm.v was successful.
+vsim -gui work.mealyFSM
+# End time: 21:29:01 on Nov 05,2023, Elapsed time: 0:06:35
+# Errors: 0, Warnings: 4
+# vsim -gui work.mealyFSM 
+# Start time: 21:29:01 on Nov 05,2023
+# Loading work.mealyFSM
+add wave -position end  sim:/mealyFSM/q
+add wave -position end  sim:/mealyFSM/state
+add wave -position end  sim:/mealyFSM/nextState
+add wave -position end  sim:/mealyFSM/clk
+add wave -position end  sim:/mealyFSM/reset
+add wave -position end  sim:/mealyFSM/A
+add wave -position end  sim:/mealyFSM/B
+add wave -position end  sim:/mealyFSM/S0
+add wave -position end  sim:/mealyFSM/S1
+add wave -position end  sim:/mealyFSM/S2
+add wave -position end  sim:/mealyFSM/S3
+force q 00
+run 100
+force q 01
+run 100
+# Compile of hmwksequentiallogicfsm.v was successful.
+vsim -gui work.mealyFSM
+# End time: 21:33:15 on Nov 05,2023, Elapsed time: 0:04:14
+# Errors: 0, Warnings: 2
+# vsim -gui work.mealyFSM 
+# Start time: 21:33:15 on Nov 05,2023
+# Loading work.mealyFSM
+run 100
+run
+# Load canceled
+# Compile of hmwksequentiallogicfsm.v was successful.
+vsim -gui work.mealyFSM
+# End time: 21:33:51 on Nov 05,2023, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 2
+# vsim -gui work.mealyFSM 
+# Start time: 21:33:51 on Nov 05,2023
+# Loading work.mealyFSM
+add wave -position end  sim:/mealyFSM/S0
+add wave -position end  sim:/mealyFSM/S1
+add wave -position end  sim:/mealyFSM/S2
+add wave -position end  sim:/mealyFSM/S3
+add wave -position end  sim:/mealyFSM/q
+add wave -position end  sim:/mealyFSM/state
+add wave -position end  sim:/mealyFSM/nextState
+add wave -position end  sim:/mealyFSM/clk
+add wave -position end  sim:/mealyFSM/reset
+add wave -position end  sim:/mealyFSM/A
+add wave -position end  sim:/mealyFSM/B
+force q 0
+run 100
+force A 1
+run 100
+force Q 1
+# ** UI-Msg (suppressible): (vsim-4008) Object 'Q' not found.
+# 
+run 100
+force Q 1
+# ** UI-Msg (suppressible): (vsim-4008) Object 'Q' not found.
+# 
+force q 1
+run 100
+run 100
+force A 0
+force q 0
+force B 1
+run 100
+force A 1
+run 100
+force q 1
+run 100
+force B 0
+run 100
+force A 0
+run 100
+# Compile of hmwksequentiallogicfsm.v was successful.
+vsim -gui work.jk_ff
+# End time: 21:50:12 on Nov 05,2023, Elapsed time: 0:16:21
+# Errors: 0, Warnings: 2
+# vsim -gui work.jk_ff 
+# Start time: 21:50:12 on Nov 05,2023
+# Loading work.jk_ff
+add wave -position end  sim:/jk_ff/j
+add wave -position end  sim:/jk_ff/k
+add wave -position end  sim:/jk_ff/clk
+add wave -position end  sim:/jk_ff/q
+force j 0
+force k 0
+run 100
+force j 1
+run 100
+# Compile of hmwksequentiallogicfsm.v was successful.
+vsim -gui work.jk_ff
+# End time: 21:54:25 on Nov 05,2023, Elapsed time: 0:04:13
+# Errors: 0, Warnings: 2
+# vsim -gui work.jk_ff 
+# Start time: 21:54:25 on Nov 05,2023
+# Loading work.jk_ff
+add wave -position end  sim:/jk_ff/S0
+add wave -position end  sim:/jk_ff/S1
+add wave -position end  sim:/jk_ff/S2
+add wave -position end  sim:/jk_ff/S3
+add wave -position end  sim:/jk_ff/jk
+add wave -position end  sim:/jk_ff/clk
+add wave -position end  sim:/jk_ff/q
+run 100
+# Compile of hmwksequentiallogicfsm.v was successful.
+vsim -gui work.jk_ff
+# End time: 21:55:50 on Nov 05,2023, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 2
+# vsim -gui work.jk_ff 
+# Start time: 21:55:50 on Nov 05,2023
+# Loading work.jk_ff
+run 100
+add wave -position end  sim:/jk_ff/S0
+add wave -position end  sim:/jk_ff/S1
+add wave -position end  sim:/jk_ff/S2
+add wave -position end  sim:/jk_ff/S3
+add wave -position end  sim:/jk_ff/jk
+add wave -position end  sim:/jk_ff/q
+add wave -position end  sim:/jk_ff/clk
+run 100
+force jk 00
+run 100
+force jk 01
+run 100
+force q 1
+run 100
+force q 0
+run 100
+restart -f
+# Compile of hmwksequentiallogicfsm.v was successful.
+# Compile of hmwksequentiallogicfsm.v was successful.
+vsim -gui work.jk_ff
+# End time: 22:01:10 on Nov 05,2023, Elapsed time: 0:05:20
+# Errors: 0, Warnings: 3
+# vsim -gui work.jk_ff 
+# Start time: 22:01:10 on Nov 05,2023
+# Loading work.jk_ff
+add wave -position end  sim:/jk_ff/S0
+add wave -position end  sim:/jk_ff/S1
+add wave -position end  sim:/jk_ff/S2
+add wave -position end  sim:/jk_ff/S3
+add wave -position end  sim:/jk_ff/jk
+add wave -position end  sim:/jk_ff/q
+add wave -position end  sim:/jk_ff/clk
+force jk 00
+run 100
+force jk 10
+run 100
+force jk 01
+run 100
+force jk 11
+run 100
+run 100
+quit -sim
+# End time: 01:27:44 on Nov 06,2023, Elapsed time: 3:26:34
+# Errors: 0, Warnings: 1
