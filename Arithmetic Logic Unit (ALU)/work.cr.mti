@@ -1,0 +1,15 @@
+{C:/Intel Quartus Prime/ALU/testvector.v} {1 {vlog -work work -stats=none {C:/Intel Quartus Prime/ALU/testvector.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testVector
+
+Top level modules:
+	testVector
+
+} {} {}} {C:/Intel Quartus Prime/ALU/Lab7_015484404.v} {1 {vlog -work work -stats=none {C:/Intel Quartus Prime/ALU/Lab7_015484404.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}}

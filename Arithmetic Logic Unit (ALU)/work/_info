@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Intel Quartus Prime/VendingMachine
+vALU
+!s110 1700477785
+!i10b 1
+!s100 RR:8>CB4X=ojAVD;9=eco2
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I7?f>2^AaW8Z?Lf6o]k]P02
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Intel Quartus Prime/ALU
+w1700476776
+8C:/Intel Quartus Prime/ALU/Lab7_015484404.v
+FC:/Intel Quartus Prime/ALU/Lab7_015484404.v
+!i122 10
+L0 1 33
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1700477785.000000
+!s107 C:/Intel Quartus Prime/ALU/Lab7_015484404.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Intel Quartus Prime/ALU/Lab7_015484404.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@a@l@u
+vtestVector
+!s110 1700477786
+!i10b 1
+!s100 o<Jhb8[3WeCRdRfLDb^kb3
+R0
+IJ@j?FFb<Ah=hHB1Az3B263
+R1
+R2
+w1700475495
+8C:/Intel Quartus Prime/ALU/testvector.v
+FC:/Intel Quartus Prime/ALU/testvector.v
+!i122 11
+L0 1 58
+R3
+r1
+!s85 0
+31
+!s108 1700477786.000000
+!s107 C:/Intel Quartus Prime/ALU/testvector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Intel Quartus Prime/ALU/testvector.v|
+!i113 1
+R4
+R5
+ntest@vector

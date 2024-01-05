@@ -1,0 +1,58 @@
+module testVector();
+	reg clk;
+	reg [31: 0] A, B;
+	reg [2: 0] f;
+	wire [31: 0] y;
+	reg [31: 0] expected;
+	wire o, z;
+	reg overflow, zero;
+	reg[31:0] vectnum, errors;
+	reg[100:0] testvectors[1000:0];
+	
+	ALU main(A, B, f, y, o, z);
+	
+	always
+		begin
+			clk = 1; #50; clk = 0; #50;
+		end
+		
+	initial begin
+		$readmemb("C:/Intel Quartus Prime/ALU/testVectors.tv", testvectors);
+		vectnum = 0;
+		errors = 0;
+	end
+	
+	always @ (posedge clk)
+		begin
+			#1; {A[31:0], B[31:0], f[2:0], expected[31:0], overflow, zero} = testvectors[vectnum];
+		end
+		
+	always  @ (negedge clk)
+		begin
+			if (y == expected && zero == z && overflow == o)
+				begin
+				$display("Success");
+				$display("Outputs: Value = %h (expected: %h)", y, expected);
+				$display("Outputs: Overflow Flag = %b (expected: %b)", o, overflow);
+				$display("Outputs: Zero Flag = %b (expected: %b)", z, zero);
+				end
+				
+			else
+				begin
+				$display ("Error");
+				$display("Outputs: Value = %h (expected: %h)", y, expected);
+				$display("Outputs: Overflow Flag = %b (expected: %b)", o, overflow);
+				$display("Outputs: Zero Flag = %b (expected: %b)", z, zero);
+				errors = errors + 1;
+				end
+			vectnum = vectnum + 1;
+			
+			if (testvectors[vectnum] === 101'bx)
+			begin
+				$display("%d test completed with $d errors", vectnum, errors);
+				$finish;
+			end
+			
+		end
+			
+	endmodule 
