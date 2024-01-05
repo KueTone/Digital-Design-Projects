@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Dec 04 09:47:49 2023
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : lab8_015484404
+Top-level Entity Name : true_dual_ram
+Family : Cyclone IV E
+Total logic elements : 2,560
+    Total combinational functions : 2,560
+    Dedicated logic registers : 1,024
+Total registers : 1024
+Total pins : 49
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
